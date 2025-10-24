@@ -146,6 +146,15 @@ collections:
   projects:
     output: true
 
+
+# Exclude pages I don't want to show 
+exclude:
+  - _news/announcement_*.md
+  - _pages/blog.md
+  - _posts/
+  - _projects/?_project.md
+  - assets/jupyter/blog.ipynb
+
 # -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------

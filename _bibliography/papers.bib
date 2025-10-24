@@ -1,115 +1,314 @@
----
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{lehmann3DElasticWave2024,
+  title = {{{3D}} Elastic Wave Propagation with a {{Factorized Fourier Neural Operator}} ({{F-FNO}})},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2024,
+  month = feb,
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  volume = {420},
+  pages = {116718},
+  issn = {0045-7825},
+  doi = {10.1016/j.cma.2023.116718},
+  abstract = {Numerical simulations are computationally demanding in three-dimensional (3D) settings but they are often required to accurately represent physical phenomena. Neural operators have emerged as powerful surrogate models to alleviate the computational costs of simulations. However, neural operators applications in 3D remain sparse, mainly due to the difficulty of obtaining training databases for supervised learning and the size of 3D neural operators that poses memory challenges. This work focuses on the propagation of elastic waves in 3D domains and showcases the Factorized Fourier Neural Operator (F-FNO) as an efficient and accurate surrogate model. The F-FNO is trained on the publicly available HEMEW-3D database of 30\hphantom{,}000 wavefields simulations in realistic heterogeneous domains. The F-FNO predicts space- and time-dependent (3D) surface wavefields depending on the characteristics of the propagation domain (characterized by the velocity of shear waves). Four FNO variants are compared and extensive investigations on the influence of hyperparameters and training strategies are conducted. The two most influential hyperparameters are the number of layers and the number of channels, meaning that richer models are more accurate. On the contrary, increasing the number of Fourier modes had little influence and did not reduce the spectral bias that causes an underestimation of high-frequency patterns. The F-FNO is sensitive to heterogeneities in the inputs but robust to the addition of noise. Additionally, it possesses good generalization ability to out-of-distribution data and transfer learning is very beneficial to improve the predictions in tailored applications.},
+  keywords = {Elastic wave propagation,Neural operators,Seismic wave simulation,Surrogate model},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/LWXSPNGU/Lehmann et al. - 2024 - 3D elastic wave propagation with a Factorized Four.pdf}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@misc{lehmann3DSwaveVelocity2022,
+  title = {{{3D S-wave}} Velocity Profiles with Random Fields},
+  author = {Lehmann, Fanny},
+  year = 2022,
+  month = dec,
+  publisher = {Zenodo},
+  doi = {10.5281/ZENODO.7404185},
+  urldate = {2023-02-18},
+  abstract = {This dataset contains 100,000 3D matrices representing S-wave velocity profiles with random fields. The spatial resolution corresponds to a grid of 9.6 x 9.6 x 9.6km with a spatial step of 300m (matrices are of size 33 x 33 x 33). Velocities go from 1,071 to 4,500m/s. Each profile contains a 1.8km-thick bottom layer at constant velocity 4500m/s. Above, the profile contains between 1 and 6 layers of random thickness. In each layer, the mean velocity is chosen uniformly in [1,785; 3,214m/s] and the coefficient of variation follows a Gaussian distribution N(0.2; 0.1). Then, a correlation length is chosen randomly among 1.5, 3, 4.5, 6 km in all three directions for each layer. The random fields' kernel has a von Karman correlation with a Hurst exponent of 0.1 and log-normal marginal distributions.},
+  copyright = {Creative Commons Attribution 4.0 International, Open Access},
+  keywords = {artificial intelligence,geophysics,seismology}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{lehmannAdvantagesPromisesDeep2023,
+  title = {Advantages and Promises of Deep Neural Operators for the Prediction of Wave Propagation},
+  booktitle = {{{EGU General Assembly}}},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2023,
+  address = {Vienna, Austria},
+  doi = {10.5194/egusphere-egu23-5068},
+  copyright = {All rights reserved}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@article{lehmannAssociationDailyTemperature2022,
+  title = {Association of {{Daily Temperature With Suicide Mortality}}: {{A Comparison With Other Causes}} of {{Death}} and {{Characterization}} of {{Possible Attenuation Across}} 5 {{Decades}}},
+  shorttitle = {Association of {{Daily Temperature With Suicide Mortality}}},
+  author = {Lehmann, Fanny and Alary, Pierre-Etienne and Rey, Gr{\'e}goire and Slama, R{\'e}my},
+  year = 2022,
+  month = nov,
+  journal = {American Journal of Epidemiology},
+  volume = {191},
+  number = {12},
+  pages = {2037--2050},
+  issn = {0002-9262, 1476-6256},
+  doi = {10.1093/aje/kwac150},
+  urldate = {2023-02-14},
+  abstract = {Abstract             Suicide is one of the leading causes of death in young adults in many Western countries. We examined the short-term association of temperature with cause-specific mortality, comparing suicide with other causes of death and describing possible attenuation of associations with temperature across decades. We considered all deaths that occurred in France between 1968 and 2016. For each cause of death, we conducted a 2-stage meta-analysis of associations with daily temperature. We stratified the association across time periods. A total of 502,017 deaths by suicide were recorded over 49 years. Temperature was monotonically associated with suicide mortality. The strongest association was found at lag 0 days. The relative risk of suicide mortality at the 99th (compared with the 1st) temperature percentile was 1.54 (95\% confidence interval, 1.46, 1.63). Among all causes of death, suicide was the only cause displaying a monotonic trend with temperature and ranked seventh for heat-related mortality; 2 other causes of death implying the nervous system ranked third and fourth. Associations with temperature attenuated between the 1968--1984 and 1985--2000 periods for all-cause mortality and suicide mortality, without clear further attenuation in the 2001--2016 period. The robust short-term monotonic association between temperature and suicide risk could be considered in heat effects-- and suicide-related prevention campaigns.},
+  copyright = {All rights reserved},
+  langid = {english},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/TQK4HICU/Lehmann et al. - 2022 - Association of Daily Temperature With Suicide Mort.pdf}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{lehmannClosingWaterBudget2021,
+  title = {Closing the Water Budget at the Global Scale Using Observations, Remote Sensing, and Reanalyses},
+  booktitle = {{{EGU General Assembly}}},
+  author = {Lehmann, Fanny and Vishwakarma, Brahma Dutt and Bamber, Jonathan},
+  year = 2021,
+  month = mar,
+  address = {Vienna, Austria},
+  doi = {10.5194/egusphere-egu21-10270},
+  urldate = {2023-02-14},
+  abstract = {\&lt;p\&gt;Despite the accuracy of GRACE terrestrial water storage estimates and the variety of global hydrological datasets providing precipitations, evapotranspiration, and runoff data, it remains challenging to find datasets satisfying the water budget equation at the global scale.\&lt;/p\&gt;\&lt;p\&gt;We select commonly used and widely-assessed datasets. We use several precipitations (CPC, CRU, GPCC, GPCP, GPM, MSWEP, TRMM, ERA5 Land, MERRA2), evapotranspiration (land surface models CLSM, Noah, VIC from GLDAS 2.0, 2.1, and 2.2; GLEAM, MOD16, SSEBop, ERA5 Land, MERRA2), and runoff (land surface models CLSM, Noah, VIC from GLDAS 2.0, 2.1, and 2.2; GRUN, ERA5 Land, MERRA2) datasets to assess the water storage change over more than 150 hydrological basins. Both mascons and spherical harmonics coefficients are used as the reference terrestrial water storage from different centres processing GRACE data. The analysis covers a wide range of climate zones over the globe and is conducted over 2003-2014.\&lt;/p\&gt;\&lt;p\&gt;The water budget closure is evaluated with Root Mean Square Deviation (RMSD), Nash-Sutcliffe Efficiency (NSE), and seasonal decomposition. Each dataset is assessed individually across all basins and dataset combinations are also ranked according to their performances. We obtain a total of 1080 combinations, among which several are suitable to close the water budget. Although none of the combinations performs consistently well over all basins, GPCP precipitations provide generally good results, together with GPCC and GPM. A better water budget closure is generally obtained when using evapotranspiration from Catchment Land Surface Models (GLDAS CLSM), while reanalyses ERA5 Land and MERRA2 are especially suitable in cold regions. Concerning runoff, the machine learning GRUN dataset performs remarkably well across climate zones, followed by ERA5 Land and MERRA2 in cold regions. We also highlight highly unrealistic values in evapotranspiration computed with version 2.2 of GLDAS (using data assimilation from GRACE) in most of the cold basins. Our results are robust as changing the GRACE product from one centre to the other does not affect our conclusions.\&lt;/p\&gt;},
+  copyright = {All rights reserved},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/4FTYZM2T/Lehmann et al. - 2021 - Closing the water budget at the global scale using.pdf}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@misc{lehmannCompilationHydrologicalDatasets2022,
+  title = {Compilation of Hydrological Datasets at the Global Scale},
+  author = {Lehmann, Fanny},
+  year = 2022,
+  month = aug,
+  publisher = {Zenodo},
+  doi = {10.5281/ZENODO.7014385},
+  urldate = {2023-02-18},
+  abstract = {Hydrological variables (evapotranspiration, precipitation, runoff, and terrestrial water storage) are distributed through several datasets that do not have the same characteristics (spatial and temporal coverage, spatial and temporal resolution). This dataset aims at providing a coherent gathering of all datasets available as of January 2021, covering at least the period from 2003 to 2014, and from 50{$^\circ$}S to 50{$^\circ$}N. This file contains: 14 datasets for evapotranspiration (ERA5-Land, FLUXCOM, GLDAS2.2 CLSM2.5, GLDAS2.1 CLSM2.5, GLDAS2.1 NOAH3.6, GLDAS VIC4.1.2, GLDAS2.0 CLSM2.5, GLDAS2.0 NOAH3.6, GLDAS2.0 VIC4.1.2, GLEAM, JRA55, MERRA2, MOD16, and SEBBop) 11 datasets for precipitation (CPC, CRU, ERA5-Land, PGF, GPCC, GPCP, GPM, JRA55, MERRA2, MSWEP, and TRMM) 11 datasets for runoff (ERA5-Land, GLDAS2.2 CLSM2.5, GLDAS2.1 CLSM2.5, GLDAS2.1 NOAH3.6, GLDAS VIC4.1.2, GLDAS2.0 CLSM2.5, GLDAS2.0 NOAH3.6, GLDAS2.0 VIC4.1.2, GRUN, JRA55, and MERRA2) 2 datasets for terrestrial water storage (GRACE CSR mascons, and GRACE JPL mascons) Each dataset is given as the original version (on a regular grid) and also as a post-treated file averaged for 189 river basins (whose borders are also provided).},
+  copyright = {Creative Commons Attribution 4.0 International, Open Access},
+  keywords = {evapotranspiration,hydrology,precipitation,river discharge,runoff,terrestrial water storage}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{lehmannFastAccuratePrediction2023,
+  title = {Fast and Accurate Prediction of Ground Motion in Complex Geologies Using Neural Operators},
+  booktitle = {{{AGU Fall Meeting}}},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2023,
+  address = {San Francisco, USA},
+  copyright = {All rights reserved}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@misc{lehmannFinetuningWeatherFoundation2025,
+  title = {Finetuning a {{Weather Foundation Model}} with {{Lightweight Decoders}} for {{Unseen Physical Processes}}},
+  author = {Lehmann, Fanny and Ozdemir, Firat and Soja, Benedikt and Hoefler, Torsten and Mishra, Siddhartha and Schemm, Sebastian},
+  year = 2025,
+  month = jun,
+  number = {arXiv:2506.19088},
+  eprint = {2506.19088},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2506.19088},
+  urldate = {2025-07-15},
+  abstract = {Recent advances in AI weather forecasting have led to the emergence of so-called "foundation models", typically defined by expensive pretraining and minimal fine-tuning for downstream tasks. However, in the natural sciences, a desirable foundation model should also encode meaningful statistical relationships between the underlying physical variables. This study evaluates the performance of the state-of-the-art Aurora foundation model in predicting hydrological variables, which were not considered during pretraining. We introduce a lightweight approach using shallow decoders trained on the latent representations of the pretrained model to predict these new variables. As a baseline, we compare this to fine-tuning the full model, which allows further optimization of the latent space while incorporating new variables into both inputs and outputs. The decoder-based approach requires 50\% less training time and 35\% less memory, while achieving strong accuracy across various hydrological variables and preserving desirable properties of the foundation model, such as autoregressive stability. Notably, decoder accuracy depends on the physical correlation between the new variables and those used during pretraining, indicating that Aurora's latent space captures meaningful physical relationships. In this sense, we argue that an important quality metric for foundation models in Earth sciences is their ability to be extended to new variables without a full fine-tuning. This provides a new perspective for making foundation models more accessible to communities with limited computational resources, while supporting broader adoption in Earth sciences.},
+  archiveprefix = {arXiv},
+  copyright = {All rights reserved},
+  keywords = {Computer Science - Machine Learning},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/3TXV2USB/Lehmann et al. - 2025 - Finetuning a Weather Foundation Model with Lightweight Decoders for Unseen Physical Processes.pdf;/home/fannyl/snap/zotero-snap/common/Zotero/storage/G4DUPBEF/2506.html}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{lehmannFirstCalibrationPhysicsbased2022,
+  title = {First Calibration of the Physics-Based Ground Motion Model of the 2019 {{Mw4}}.9 {{Le Teil}} Earthquake ({{France}})},
+  booktitle = {{{EGU General Assembly}}},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2022,
+  month = mar,
+  address = {Vienna, Austria},
+  doi = {10.5194/egusphere-egu23-5068},
+  urldate = {2023-02-14},
+  copyright = {All rights reserved}
+}
+
+@inproceedings{lehmannFourierNeuralOperator2023,
+  title = {Fourier {{Neural Operator Surrogate Model}} to {{Predict 3D Seismic Waves Propagation}}},
+  booktitle = {5th {{ECCOMAS Thematic Conference}} on {{Uncertainty Quantification}} in {{Computational Sciences}} and {{Engineering}}},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2023,
+  month = jun,
+  address = {Athens, Greece},
+  doi = {10.7712/120223.10339.20362},
+  abstract = {With the recent rise of neural operators, scientific machine learning offers new solutions to quantify uncertainties associated with high-fidelity numerical simulations. Traditional neural networks, such as Convolutional Neural Networks (CNN) or Physics-Informed Neural Networks (PINN), are restricted to the prediction of solutions in a predefined configuration. With neural operators, one can learn the general solution of Partial Differential Equations, such as the elastic wave equation, with varying parameters. There have been very few applications of neural operators in seismology. All of them were limited to two-dimensional settings, although the importance of three-dimensional (3D) effects is well known.},
+  copyright = {All rights reserved},
+  langid = {english},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/ELV89C2G/Lehmann et al. - 2023 - Fourier Neural Operator Surrogate Model to Predict.pdf}
+}
+
+@article{lehmannHowWellAre2022,
+  title = {How Well Are We Able to Close the Water Budget at the Global Scale?},
+  author = {Lehmann, Fanny and Vishwakarma, Bramha Dutt and Bamber, Jonathan},
+  year = 2022,
+  month = jan,
+  journal = {Hydrology and Earth System Sciences},
+  volume = {26},
+  number = {1},
+  pages = {35--54},
+  issn = {1607-7938},
+  doi = {10.5194/hess-26-35-2022},
+  urldate = {2023-02-14},
+  abstract = {Abstract. The water budget equation describes the exchange of water between the land, ocean, and atmosphere. Being able to adequately close the water budget gives confidence in our ability to model and/or observe the spatio-temporal variations in the water cycle and its components. Due to advances in observation techniques, satellite sensors, and modelling, a number of data products are available that represent the components of water budget in both space and time. Despite these advances, closure of the water budget at the global scale has been elusive. In this study, we attempt to close the global water budget using precipitation, evapotranspiration, and runoff data at the catchment scale. The large number of recent state-of-the-art datasets provides a new evaluation of well-used datasets. These estimates are compared to terrestrial water storage~(TWS) changes as measured by the Gravity Recovery And Climate Experiment~(GRACE) satellite mission. We investigated 189~river basins covering more than 90\,\% of the continental land area. TWS changes derived from the water balance equation were compared against GRACE data using two metrics: the Nash--Sutcliffe efficiency~(NSE) and the cyclostationary NSE. These metrics were used to assess the performance of more than 1600~combinations of the various datasets considered. We found a positive NSE and cyclostationary NSE in 99\,\% and 62\,\% of the basins examined respectively. This means that TWS changes reconstructed from the water balance equation were more accurate than the long-term~(NSE) and monthly (cyclostationary NSE) mean of GRACE time series in the corresponding basins. By analysing different combinations of the datasets that make up the water balance, we identified data products that performed well in certain regions based on, for example, climatic zone. We identified that some of the good results were obtained due to the cancellation of errors in poor estimates of water budget components. Therefore, we used coefficients of variation to determine the relative quality of a data product, which helped us to identify bad combinations giving us good results. In general, water budget components from ERA5-Land and the Catchment Land Surface Model~(CLSM) performed better than other products for most climatic zones. Conversely, the latest version of CLSM,~v2.2, performed poorly for evapotranspiration in snow-dominated catchments compared, for example, with its predecessor and other datasets available. Thus, the nature of the catchment dynamics and balance between components affects the optimum combination of datasets. For regional studies, the combination of datasets that provides the most realistic TWS for a basin will depend on its climatic conditions and factors that cannot be determined a~priori. We believe that the results of this study provide a road map for studying the water budget at catchment scale.},
+  copyright = {All rights reserved},
+  langid = {english},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/2BCGCC2F/hess-26-35-2022-supplement.pdf;/home/fannyl/snap/zotero-snap/common/Zotero/storage/IKQPLMA2/Lehmann et al. - 2022 - How well are we able to close the water budget at .pdf}
+}
+
+@article{lehmannMachineLearningOpportunities2022,
+  title = {Machine Learning Opportunities to Conduct High-Fidelity Earthquake Simulations in Multi-Scale Heterogeneous Geology},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2022,
+  journal = {Frontiers in Earth Science},
+  volume = {10},
+  pages = {1--17},
+  issn = {2296-6463},
+  doi = {10.3389/feart.2022.1029160},
+  abstract = {The 2019 Le Teil earthquake is an illustrative example of a moderate (M{\textexclamdown}sub{\textquestiondown}W{\textexclamdown}/sub{\textquestiondown} 4.9) yet damaging event, occurring at shallow depth ({$\approx$}1 km) in a region with little to no geophysical data available. Therefore, using a high-fidelity wave propagation code, we performed numerical simulations of the Le Teil earthquake in a highly uncertain framework, investigating several seismic sources and geological set-ups. With respect to the former aspect, a point-source model and an extended kinematic fault model were compared. The latter aspect was investigated by comparing a 1D-layered to a 3D geological model. Those models were enhanced with random fluctuations, in order to obtain three alternative non-stationary random geological fields. The synthetic waveforms obtained from regional geophysical models were globally coherent with the recorded ones. The extended fault source model seemed more realistic than the point-source model. In addition, some geological random fields improved the synthetics' agreement with the recordings. However, the three random field samplings led to a high variability in induced ground motion responses. Given the computational burden of high-fidelity simulations, we used two dimensionality reduction methods, namely the Principal Component Analysis (PCA) and a deep neural network (3D UNet), to investigate this variability. The methods were applied to a database of 40,000 3D geological random fields. Both the PCA and the 3D UNet condensed the variability of the 3D geological fields into a few components. These were sufficient to reconstruct the original fields with great accuracy. More importantly, the seismic response arising from the propagation throughout the reconstructed fields was in excellent agreement with the response of the original geological fields in more than 75\% of the dataset. By building a structured ensemble of complex geological fields from their reduced representation, it may become possible to find a relationship between the reduced representation and the generated ground motion. Thus, our study proves the interest of dimensionality reduction to perform uncertainty analyses in complex geological media.},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/936JMAAA/Presentation 1.pdf;/home/fannyl/snap/zotero-snap/common/Zotero/storage/FEP8C39Z/Lehmann et al. - 2022 - Machine learning opportunities to conduct high-fid.pdf}
+}
+
+@inproceedings{lehmannMachineLearningOpportunities2022a,
+  title = {Machine Learning Opportunities to Reduce the Dimension of Uncertain Complex Geophysical Media},
+  booktitle = {{{AGU Fall Meeting}}},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2022,
+  month = dec,
+  publisher = {Preprints},
+  address = {Chicago USA},
+  urldate = {2023-02-15},
+  copyright = {All rights reserved}
+}
+
+@article{lehmannMultipleinputFourierNeural2025,
+  title = {Multiple-Input {{Fourier Neural Operator}} ({{MIFNO}}) for Source-Dependent {{3D}} Elastodynamics},
+  author = {Lehmann, Fanny and Gatti, Filippo and Clouteau, Didier},
+  year = 2025,
+  month = apr,
+  journal = {Journal of Computational Physics},
+  volume = {527},
+  pages = {113813},
+  issn = {00219991},
+  doi = {10.1016/j.jcp.2025.113813},
+  urldate = {2025-02-10},
+  langid = {english},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/66EPG975/1-s2.0-S0021999125000968-mmc1.pdf;/home/fannyl/snap/zotero-snap/common/Zotero/storage/IGAFXNTD/Lehmann et al. - 2025 - Multiple-input Fourier Neural Operator (MIFNO) for source-dependent 3D elastodynamics.pdf}
+}
+
+@inproceedings{lehmannMultipleInputsFourier2024,
+  title = {Multiple {{Inputs Fourier Neural Operator}} for {{3D Elastic Wave Propagation}}},
+  booktitle = {{{SIAM Conference}} on {{Uncertainty Quantification}}},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2024,
+  address = {Trieste, Italia},
+  copyright = {All rights reserved}
+}
+
+@misc{lehmannPhysicsbasedSimulations3D2023a,
+  title = {Physics-Based {{Simulations}} of {{3D Wave Propagation}}: A {{Dataset}} for {{Scientific Machine Learning}}},
+  author = {Lehmann, Fanny},
+  year = 2023,
+  month = aug,
+  publisher = {Recherche Data Gouv},
+  doi = {10.57745/LAI6YU},
+  copyright = {All rights reserved}
+}
+
+@misc{lehmannPhysicsbasedSimulations3D2024,
+  title = {Physics-Based {{Simulations}} of {{3D Wave Propagation}} - {{Case}} Study Deriving from the {{Le Teil}} Earthquake},
+  author = {Lehmann, Fanny},
+  year = 2024,
+  month = jun,
+  publisher = {Zenodo},
+  doi = {10.5281/ZENODO.11505294},
+  urldate = {2024-06-07},
+  abstract = {This dataset contains 4,000 simulation results of the 3D elastic wave equation in a setting deriving from the Le Teil earthquake (France, 2019). The elastic wave equation governs the propagation of waves in a 3D propagation medium. Two types of data are given in this dataset: a materials dataset and a velocity dataset. Materials dataset Each material describes the propagation domain used for one numerical simulation. It is built from non-stationary random fields added to the reference 1D velocity profile and corresponds to the velocity of shear waves. The minimum value is 1500m/s and the maximum is 4500m/s. All materials contain a 1800m-thick bottom layer with a constant velocity of 4500m/s.~ All materials are 3D arrays of shape 32 x 32 x 32.They correspond to a physical size of 9.6 x 9.6 x 9.6km{$^3$}.~ Practical use Materials are provided as `.npy` arrays, readable with python: `a = np.load(`materials0-1999.npy')`Each file contains 2000 materials. Therefore, `a` is of shape (2000, 32, 32, 32). Indices correspond to the material index, the x coordinate (from West to East), the y coordinate (from South to North), and the z coordinate (from bottom to top).~ Velocity dataset The velocity dataset contains the velocity wavefields simulated at the surface of each propagation domain. They have been generated by solving the 3D elastic wave equation with the high-performance computing code SEM3D based on the Spectral Element Method (https://github.com/sem3d/SEM). To each material described above corresponds one velocity field, obtained by the propagation of waves through this material. Velocity fields were recorded by a grid of 16 x 16 virtual sensors located at the surface of the propagation domain between 150m and 450m (600m between consecutive sensors). Each sensor records the 3-component velocity with a 100Hz sampling between 0s and 20s.~ Computational details: The computational mesh was designed with elements of size 300m and 7 Gauss-Lobato-Legendre quadrature points. It can accurately represent the propagation of waves up to 5Hz frequency. Waves were generated by a point-wise source placed at the bottom of the domain, inside the constant layer (the position of the source is 4800, 4800, -8400m). The seismic source derives from the Le Teil earthquake [Delouis et al., 2021, doi:10.5802/crgeos.78]. The seismic source is described by a moment tensor with fixed orientation (strike = 48{$^\circ$}, dip = 45{$^\circ$}, and rake = 88{$^\circ$}) and amplitude (moment magnitude M0=2.47 {$\cdot$} 10{\textasciicircum}16 N.m). Practical use Results are given in .feather dataframes, readable with pandas library in Python: v = pd.read\_feather(`velocity0-99.feather'). Each dataframe contains 100 simulation results. Each row of the dataframe has the following format:~ run field x y z 0.0 0.01 0.02 ... 19.98 19.99 12 Veloc E 150.0 770.0 -1.0 0 0 0 ... 1.1e-5 1.0e-5 12 Veloc N 150.0 770.0 -1.0 0 0 0 ... 3e-6 3e-6 12 Veloc Z 150.0 770.0 -1.0 0 0 0 ... -2.6e-5 -2.7e-5 ... ... ... ... ... ... ... ... ... ... ... where `run` indicates the index of the material used in this simulation, `field` indicates the component of the velocity field (`Veloc E` for East-West, `Veloc N` for North-South, `Veloc Z` for Vertical). `x`, `y`, `z` are the coordinates of the sensor (in meters). The next 2000 columns contain the velocity field for times 0, 0.01, {\dots}, 19.99. Related work This dataset was used to fine-tune a Factorized Fourier Neural Operator (F-FNO, Lehmann et al. 2024, doi:10.1016/j.cma.2023.116718) to predict ground motion wavefields from 3D geologies. The code to train the F-FNO is available at https://github.com/lehmannfa/HEMEW3D},
+  collaborator = {Gatti, Filippo and Clouteau, Didier and Bertin, Micha{\"e}l},
+  copyright = {Creative Commons Attribution 4.0 International},
+  keywords = {Artificial intelligence,Deep learning,Earthquake engineering,FOS: Earth and related environmental sciences,Geophysics,Seismology,Transfer learning}
+}
+
+@inproceedings{lehmannSeismicHazardAnalysis2023,
+  title = {Seismic Hazard Analysis with a {{Factorized Fourier Neural Operator}} ({{F-FNO}}) Surrogate Model Enhanced by Transfer Learning},
+  booktitle = {{{NeurIPS}} 2023 {{AI}} for Science Workshop},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2023,
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/R8SW3QPP/Lehmann et al. - 2023 - Seismic hazard analysis with a Factorized Fourier .pdf}
+}
+
+@inproceedings{lehmannSeismicHazardAnalysis2023a,
+  title = {Seismic Hazard Analysis with a {{Fourier Neural Operator}} ({{FNO}}) Surrogate Model Enhanced by Transfer Learning},
+  booktitle = {Technological {{Innovations}} in {{Nuclear Civil Engineering}}},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2023,
+  address = {ENS Paris-Saclay, Gif-sur-Yvette, France},
+  copyright = {All rights reserved}
+}
+
+@phdthesis{lehmannSurrogateModelElastic2024,
+  type = {Theses},
+  title = {A Surrogate Model of Elastic Wave Propagation to Quantify Uncertainties in Seismic Hazard Analysis},
+  author = {Lehmann, Fanny},
+  year = 2024,
+  month = jun,
+  copyright = {All rights reserved},
+  school = {Universit{\'e} Paris-Saclay},
+  keywords = {\'Equation d'ondes \'elastique,Al\'ea sismique,Artificial intelligence,Elastic wave equation,Intelligence artificielle,M\'eta-Mod\`ele,Quantification d'incertitudes,Seismic hazard assessment,Surrogate model,Transfer learning,Transfert d'apprentissage,Uncertainty quantification},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/GT7L46RV/Lehmann - 2024 - A surrogate model of elastic wave propagation to q.pdf}
+}
+
+@article{lehmannSyntheticGroundMotions2024,
+  title = {Synthetic Ground Motions in Heterogeneous Geologies from Various Sources: The {{HEMEW}}{\textbackslash}textsuperscript\{\vphantom\}{{S}}\vphantom\{\}-{{3D}} Database},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
+  year = 2024,
+  journal = {Earth System Science Data},
+  volume = {16},
+  number = {9},
+  pages = {3949--3972},
+  doi = {10.5194/essd-16-3949-2024},
+  copyright = {All rights reserved},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/96LNSA5G/Lehmann et al. - 2024 - Synthetic ground motions in heterogeneous geologie.pdf}
+}
+
+@article{lehmannUncertaintyPropagationCrustal2024,
+  title = {Uncertainty Propagation from Crustal Geologies to Rock-Site Ground Motion with a {{Fourier Neural Operator}}},
+  author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Greni{\'e}, Damien and Clouteau, Didier},
+  year = 2024,
+  journal = {European Journal of Environmental and Civil Engineering},
+  pages = {1--18},
+  issn = {1964-8189},
+  doi = {10.1080/19648189.2024.2393883},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/KTNUXN73/Lehmann et al. - 2024 - Uncertainty propagation from crustal geologies to .pdf}
+}
+
+@misc{perroneIntegratingFourierNeural2025,
+  title = {Integrating {{Fourier Neural Operators}} with {{Diffusion Models}} to Improve {{Spectral Representation}} of {{Synthetic Earthquake Ground Motion Response}}},
+  author = {Perrone, Niccol{\`o} and Lehmann, Fanny and Gabrielidis, Hugo and Fresca, Stefania and Gatti, Filippo},
+  year = 2025,
+  month = apr,
+  number = {arXiv:2504.00757},
+  eprint = {2504.00757},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2504.00757},
+  urldate = {2025-04-07},
+  abstract = {Nuclear reactor buildings must be designed to withstand the dynamic load induced by strong ground motion earthquakes. For this reason, their structural behavior must be assessed in multiple realistic ground shaking scenarios (e.g., the Maximum Credible Earthquake). However, earthquake catalogs and recorded seismograms may not always be available in the region of interest. Therefore, synthetic earthquake ground motion is progressively being employed, although with some due precautions: earthquake physics is sometimes not well enough understood to be accurately reproduced with numerical tools, and the underlying epistemic uncertainties lead to prohibitive computational costs related to model calibration. In this study, we propose an AI physics-based approach to generate synthetic ground motion, based on the combination of a neural operator that approximates the elastodynamics Green's operator in arbitrary source-geology setups, enhanced by a denoising diffusion probabilistic model. The diffusion model is trained to correct the ground motion time series generated by the neural operator. Our results show that such an approach promisingly enhances the realism of the generated synthetic seismograms, with frequency biases and Goodness-Of-Fit (GOF) scores being improved by the diffusion model. This indicates that the latter is capable to mitigate the mid-frequency spectral falloff observed in the time series generated by the neural operator. Our method showcases fast and cheap inference in different site and source conditions.},
+  archiveprefix = {arXiv},
+  copyright = {All rights reserved},
+  keywords = {Computer Science - Machine Learning},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/TCGRGI7Q/Perrone et al. - 2025 - Integrating Fourier Neural Operators with Diffusion Models to improve Spectral Representation of Syn.pdf;/home/fannyl/snap/zotero-snap/common/Zotero/storage/5Q7WGBEB/2504.html}
+}
+
+@article{thomasPerformanceAnalysisNovel2021,
+  title = {Performance {{Analysis}} of a {{Novel High Frequency Self-Reconfigurable Battery}}},
+  author = {Thomas, R{\'e}my and Lehmann, Fanny and Blatter, J{\'e}r{\^o}me and Despesse, Ghislain and Heiries, Vincent},
+  year = 2021,
+  month = jan,
+  journal = {World Electric Vehicle Journal},
+  volume = {12},
+  number = {1},
+  pages = {10},
+  issn = {2032-6653},
+  doi = {10.3390/wevj12010010},
+  urldate = {2023-02-14},
+  abstract = {Self-reconfigurable battery architectures have gained a lot of interest recently in the literature, with more and more advanced functionalities. This paper describes the performance analysis of our proposed High Frequency Self-Reconfigurable Battery (HF SRB). To evaluate specific features with long-term dependencies of our system, a full functional behavioral simulator was developed. A comparison with a real 128-level HF SRB validated the simulator operation. The balancing performances obtained on vehicle test cycles showed the cell capacity discrepancy that the HF SRB is capable of handling in a single complete charge or discharge cycle. The magnitude of this gap demonstrated the extent to which the HF SRB is capable of operating with second life cells or even different chemistry mixes.},
+  copyright = {All rights reserved},
+  langid = {english},
+  file = {/home/fannyl/snap/zotero-snap/common/Zotero/storage/FRFMFYWU/Thomas et al. - 2021 - Performance Analysis of a Novel High Frequency Sel.pdf}
 }

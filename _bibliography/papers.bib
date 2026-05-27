@@ -45,6 +45,14 @@
   preview = {2022-aje.png},
 }
 
+@online{lehmann_scale_,
+  title = {Can {{AI Weather Models Predict Beyond Two Weeks}}? {{A Quantitative Benchmark}} and {{Analysis}} of {{Long Rollouts}}},
+  author = {Lehmann, Fanny and Cheng, Yun and Ozdemir, Firat and Hoefler, Torsten and Schemm, Sebastian and Soja, Benedikt and Mishra, Siddhartha},
+  pubstate = {prepublished},
+url = {https://github.com/fannylehmann/fannylehmann.github.io/blob/main/assets/pdf/arxiv_version.pdf},
+abstract = {While AI weather models excel at short-to-medium range forecasts (up to 15 days), they frequently suffer from ill-defined “instabilities” when rolled out over longer horizons. This work addresses the lack of a formal taxonomy by categorizing these failures into three distinct regimes — blow-up, drift, and loss of seasonality — through year-long rollouts of nine state-of-the-art AI weather models. Our analysis reveals that stability hinges on the treatment of small spatio-temporal scales: unstable models amplify high-frequency energy, while stable models act as denoisers when noise is added to their inputs. Far from reducing these models to mere stochastic parrots, our findings highlight that stable models generate unique weather trajectories, conditioned on the initial state. We verify our findings through ablation studies on architectural design choices, conducted using state-of-the-art Vision Transformer (ViT) AI weather model architectures.}
+}
+
 @misc{lehmannCompilationHydrologicalDatasets2022,
   title = {Compilation of Hydrological Datasets at the Global Scale},
   author = {Lehmann, Fanny},
@@ -210,6 +218,21 @@
   doi = {10.1080/19648189.2024.2393883},
   preview = {2024-ejece.jpg},
   abstract = {Seismic hazard analyses in the area of a nuclear installation must account for a large number of uncertainties, including limited geological knowledge. Combining the accuracy of physics-based simulations with the expressivity of deep neural networks can help to quantify the influence of crustal geological uncertainties on surface ground motion. This work uses a Factorised Fourier Neural Operator (F-FNO) to learn the relationship between 3D crustal heterogeneous geologies and time-dependent wavefields at the Earth’s surface up to a 5Hz maximal frequency. The F-FNO is pretrained on a generic database and then, fine-tuned with only 250 samples targeted to the Le Teil region (South-Eastern France). The F-FNO correctly predicts the wave arrival times and the main wavefronts. As quantified by Goodness-Of-Fit (GOF) criteria, 83% of predictions have excellent phase GOF and 75% have very good envelope GOF. The Peak Ground Velocity and Pseudo-Spectral Acceleration are also accurate, especially for geologies with low-to-moderate heterogeneities. Thanks to the F-FNO speed, ground motion distributions can be easily computed and provide safety margins compared to 1D simulations. These results show that the F-FNO is an efficient surrogate model to quantify the range of ground motion a nuclear installation could face in the presence of geological uncertainties.}
+}
+
+@online{ozdemir_earth_2026,
+  title = {Earth {{System Foundation Model}} ({{ESFM}}): {{A}} Unified Framework for Heterogeneous Data Integration and Forecasting},
+  shorttitle = {Earth {{System Foundation Model}} ({{ESFM}})},
+  author = {Ozdemir, Firat and Cheng, Yun and Mohebi, Salman and Lehmann, Fanny and Adamov, Simon and Zhang, Zhenyi and Trentini, Leonardo and Grund, Dana and Fuhrer, Oliver and Hoefler, Torsten and Mishra, Siddhartha and Schemm, Sebastian and Soja, Benedikt and Salzmann, Mathieu},
+  date = {2026-04-20},
+  eprint = {2605.00850},
+  eprinttype = {arXiv},
+  doi = {10.48550/arXiv.2605.00850},
+  url = {http://arxiv.org/abs/2605.00850},
+  urldate = {2026-05-13},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Electrical Engineering and Systems Science - Image and Video Processing,Physics - Atmospheric and Oceanic Physics},
+abstract = {Following their success in other areas, such as language processing, the idea of creating a foundation model for natural sciences has gained traction. A foundation model for the Earth system is one that has learned the statistical relationships between physical variables and can predict them. It is a versatile model that excels when finetuned to specific tasks, and not a task-specific weather forecasting model. To achieve this, foundational models are typically pre-trained on very large datasets. Here, we introduce Earth System Foundation Model (ESFM), a fully open model that builds on the 3D Swin UNet transformer backbone of the pioneering Aurora model. ESFM introduces a series of extensions that significantly increase its functionality, thereby fostering the adoption of foundation models in the climate sciences. Firstly, the encoding scheme and training protocols have been extended to handle diverse datasets, including those containing missing values across all spatio-temporal dimensions such as satellite data, as well as station data, all under one backbone. Axial attention is introduced to capture inter-variable dependencies. As a result, ESFM skillfully predicts variables in regions or on pressure levels where no data is present at the initial time, while preserving inter-variable relationships, for example between temperature, pressure, and humidity. Individual variable tokenization enables different sets of variables to be shuffled during training and simplifies the process of building extensions for new downstream tasks. Adaptive layer norm-based ensembles allow for a simple yet effective way to transform deterministic ESFM to a probabilistic FM. We present our findings using dense gridded data, such as ERA5 and CMIP6, as well as regionally masking of dense data, sparse gridded MODIS satellite data, and station data. Our results demonstrate competitive or superior performance relative to state-of-the-art benchmarks in each domain. Additional case studies of Super Typhoon Doksuri in July 2023 and the 2024 sudden stratospheric warming events show clear indications of accurate positional and magnitude estimations of extreme weather. The results show that ESFM retains all the strengths of previous foundation models, such as long term stability, but facilitates the application of foundation models on a variety of downstream tasks.}
 }
 
 @misc{perroneIntegratingFourierNeural2025,

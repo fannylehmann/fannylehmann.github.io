@@ -1,3 +1,35 @@
+@misc{lehmann_can_2026,
+  title = {Can {{AI Weather Models Predict Beyond Two Weeks}}? {{A Quantitative Benchmark}} and {{Analysis}} of {{Long Rollouts}}},
+  author = {Lehmann, Fanny and Cheng, Yun and Ozdemir, Firat and Hoefler, Torsten and Schemm, Sebastian and Soja, Benedikt and Mishra, Siddhartha},
+  year = 2026,
+  month = may,
+  doi = {10.48550/arXiv.2605.30184},
+  abstract = {While AI weather models excel at short-to-medium range forecasts (up to 15 days), they frequently suffer from ill-defined "instabilities" when rolled out over longer horizons. This work addresses the lack of a formal taxonomy by categorizing these failures into three distinct regimes: blow-up, drift, and loss of seasonality, through year-long rollouts of nine state-of-the-art AI weather models. Our analysis reveals that stability hinges on the treatment of small spatio-temporal scales: unstable models amplify high-frequency energy, while stable models act as denoisers when noise is added to their inputs. Far from reducing these models to mere stochastic parrots, our findings highlight that stable models generate unique weather trajectories, conditioned on the initial state. We verify our findings through ablation studies on architectural design choices, conducted using state-of-the-art Vision Transformer (ViT) AI weather model architectures. },
+  preview = {2026-rollouts.jpg},
+}
+
+@misc{perrone_correcting_2026,
+  title = {Correcting {{Neural Operator Spectral Bias}} via {{Diffusion Posterior Sampling}} with {{Sparse Observations}}},
+  author = {Perrone, Niccol{\`o} and Lehmann, Fanny and Fresca, Stefania and Gatti, Filippo},
+  year = 2026,
+  month = june,
+  doi = {https://arxiv.org/abs/2606.03936},
+   abstract = {Neural operator surrogates (NO) approximate PDE solutions orders of magnitude faster than numerical solvers, but suffer from spectral bias: high-frequency content is systematically attenuated, limiting reliability where fine-scale structure matters. Sparse sensor measurements of the field are often available too, offering pointwise accuracy without spectral distortion but covering only a small fraction of the domain. We address this by treating NO predictions as auxiliary observations in a diffusion posterior sampling framework. Our method, FreqNO-DPS (this https URL), combines an unconditional score-based diffusion prior, trained on high-fidelity simulations, with diffusion posterior sampling (DPS) conditioned on sparse observations and guided by a frozen neural operator. Naive integration reintroduces the surrogate's spectral bias; we resolve this with a closed-form, spectrally shaped guidance score that weights the surrogate by its frequency-dependent accuracy and needs no denoiser backpropagation. A distribution-free analysis bounds the approximation error across the frequency-diffusion-time plane and shows the guidance's frequency dependence is preserved regardless of distributional assumptions. On 3D elastic wavefield prediction at 5% and 2% sensor coverage, the method reaches near-zero spectral bias across all bands, where both the surrogate and sensor-only DPS show systematic high-frequency attenuation. Isotropic guidance, the natural baseline, improves pointwise accuracy but carries the bias into the posterior nearly intact, confirming that frequency-dependent calibration is essential, not merely beneficial. The framework needs only paired surrogate/reference data and exploits no problem-specific structure beyond the residual's approximate spectral diagonality, verifiable for new surrogates via the coherence diagnostic we provide.},
+ preview = {2026-freqNO-DPS.jpg},
+}
+
+@misc{teutschmann_gnssfm_2026,
+  title = {{{GNSS-FM}}: {{A Self-Supervised Foundation Model}} for {{Daily GNSS Displacement Time Series}}},
+  shorttitle = {{{GNSS-FM}}},
+  author = {Teutschmann, Nick and Crocetti, Laura and Lehmann, Fanny and Trentini, Leonardo and Soja, Benedikt},
+  year = 2026,
+  publisher = {arXiv},
+  doi = {10.48550/ARXIV.2606.07725},
+  urldate = {2026-06-09},
+  abstract = {Displacement time series from Global Navigation Satellite Systems (GNSS) are essential for a wide range of applications, including monitoring tectonic crustal deformations and investigating the different stages of the earthquake cycle. Machine learning methods have proven promising for GNSS applications; however, most remain fully supervised. This creates a bottleneck as labeled data are scarce, even though large amounts of unlabeled GNSS data are freely available. We present GNSS-FM, a self-supervised foundation model for daily GNSS time series. The model uses a dual-stream input combining displacement and velocity-like increments, and is pretrained using a masked latent prediction objective with vector-quantized targets adapted from wav2vec 2.0, with several modifications for geodetic data. Pretrained on data from over 17,000 globally distributed GNSS stations, an analysis of the learned codebook suggests that the representations capture the main signal types in GNSS displacement data, including seismic offsets, tectonic drift, and seasonal patterns. The foundation model is later fine-tuned on two downstream tasks, namely 90-day displacement forecasting and seismic step localization, where it outperforms strong task-specific baselines in both cases. These results show that self-supervised pretraining is a promising approach for GNSS time series analysis.},
+  preview = {2026-gnss-fm.jpg},
+}
+
 @article{lehmann3DElasticWave2024,
   title = {{{3D}} Elastic Wave Propagation with a {{Factorized Fourier Neural Operator}} ({{F-FNO}})},
   author = {Lehmann, Fanny and Gatti, Filippo and Bertin, Micha{\"e}l and Clouteau, Didier},
@@ -233,6 +265,7 @@ month = apr,
   urldate = {2026-05-13},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Electrical Engineering and Systems Science - Image and Video Processing,Physics - Atmospheric and Oceanic Physics},
 abstract = {Following their success in other areas, such as language processing, the idea of creating a foundation model for natural sciences has gained traction. A foundation model for the Earth system is one that has learned the statistical relationships between physical variables and can predict them. It is a versatile model that excels when finetuned to specific tasks, and not a task-specific weather forecasting model. To achieve this, foundational models are typically pre-trained on very large datasets. Here, we introduce Earth System Foundation Model (ESFM), a fully open model that builds on the 3D Swin UNet transformer backbone of the pioneering Aurora model. ESFM introduces a series of extensions that significantly increase its functionality, thereby fostering the adoption of foundation models in the climate sciences. Firstly, the encoding scheme and training protocols have been extended to handle diverse datasets, including those containing missing values across all spatio-temporal dimensions such as satellite data, as well as station data, all under one backbone. Axial attention is introduced to capture inter-variable dependencies. As a result, ESFM skillfully predicts variables in regions or on pressure levels where no data is present at the initial time, while preserving inter-variable relationships, for example between temperature, pressure, and humidity. Individual variable tokenization enables different sets of variables to be shuffled during training and simplifies the process of building extensions for new downstream tasks. Adaptive layer norm-based ensembles allow for a simple yet effective way to transform deterministic ESFM to a probabilistic FM. We present our findings using dense gridded data, such as ERA5 and CMIP6, as well as regionally masking of dense data, sparse gridded MODIS satellite data, and station data. Our results demonstrate competitive or superior performance relative to state-of-the-art benchmarks in each domain. Additional case studies of Super Typhoon Doksuri in July 2023 and the 2024 sudden stratospheric warming events show clear indications of accurate positional and magnitude estimations of extreme weather. The results show that ESFM retains all the strengths of previous foundation models, such as long term stability, but facilitates the application of foundation models on a variety of downstream tasks.}
+  preview = {2026-esfm.jpg},
 }
 
 @misc{perroneIntegratingFourierNeural2025,

@@ -27,6 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a postdoctoral fellow at the ETH AI Center since November 2024. I received my PhD from the Université Paris-Saclay (France) in June 2024 and previously, I studied applied mathematics at the Ecole Normale Supérieure Paris-Saclay (France). 
+I am a postdoctoral fellow at the ETH AI Center since November 2024. I received my PhD from the Université Paris-Saclay (France) in June 2024 and previously, I studied applied mathematics at the Ecole Normale Supérieure Paris-Saclay (France).
 
 My research evolves around Scientific Machine Learning for Earth Sciences. During my PhD, she developped a surrogate model for the propagation of seismic waves using neural operators in three dimensions. One core focus of my current research is the development of foundation models for weather and climate prediction with a focus on hydrological predictions.

@@ -27,6 +27,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a postdoctoral fellow at the ETH AI Center since November 2024. I received my PhD from the Université Paris-Saclay (France) in June 2024 and previously, I studied applied mathematics at the Ecole Normale Supérieure Paris-Saclay (France).
+I will join the Amsterdam Machine Learning Lab (University of Amsterdam) as an Assistant Professor in AI for Science on 1 December 2026. I am currently a postdoctoral fellow at the ETH AI Center, where I have worked since November 2024. I received my PhD from Université Paris-Saclay (France) in June 2024, after studying applied mathematics at the Ecole Normale Supérieure Paris-Saclay (France).
 
-My research evolves around Scientific Machine Learning for Earth Sciences. During my PhD, she developped a surrogate model for the propagation of seismic waves using neural operators in three dimensions. One core focus of my current research is the development of foundation models for weather and climate prediction with a focus on hydrological predictions.
+My research focuses on developing machine learning methods for physical systems, particularly those that appear in Earth Sciences. I am particularly interested in neural operators and how to learn complex physics in realistic settings: three-dimensional domains, heterogeneous parameters, multi-scale processes, etc. I am also doing research on foundation models, specifically for weather and climate: which information do you encode in their latent space, what are the benefits of integrating observations from correlated variables, and how do they extend to long time scales.
+
+### Join my group
+I am recruiting a PhD student through the [ELLIS PhD Program](https://ellis.eu/news/ellis-phd-program-call-for-applications-2026). The application deadline is 31 October 2026.
+
+If you want to do research in AI for Science and my research interests resonate with you, please [reach out to me](mailto:fanny.lehmann@ai.ethz.ch). I would be happy to hear about your background, research interests, and ideas. You can also apply directly through the [ELLIS application portal](https://apply.ellis.eu/) and you will find my name as a potential advisor.

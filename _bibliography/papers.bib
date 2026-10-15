@@ -1,3 +1,40 @@
+@inproceedings{bommer2026beyond,
+  title = {Beyond Post-Hoc Saliency: Assessing Mechanistic Representation Interventions in a Deep Learning Weather Model},
+  booktitle = {NeurIPS XAI4Science workshop: Knowledge Discovery and Trust through Interpretable Foundation Models},
+  author = {Bommer, Philine Lou and Kretschmer, Marlene and Kasteleyn, Emma and Hedstr{\"o}m, Anna and Lucic, Ana and Lehmann, Fanny and H{\"o}hne, Marina MC},
+  year = {2026},
+  abstract = {Deep learning weather models (DLWMs) achieve competitive global skill, but their opaque representations limit verification of whether forecasts rely on physical dynamics or statistical artifacts. While linear probes and representation interventions have enabled internal control in language models, the application to DLWM remains largely unexplored. Moving beyond post-hoc attribution-based explainability methods, we present a first systematic assessment of linear probes and mechanistic representation interventions for DLWM. We investigate the efficacy of four mechanistic interventions applied to the Aurora model across two different target cases: tropical cyclones (TCs), investigating bias correction, and El-Niño-Southern-Oscillation (ENSO), investigating shifts in ENSO strength, useful for scientific validation and discovery. For TC peak wind (a localized, high-frequency event) three techniques fail despite strong probe fits, only a probe-based low-rank adaptation (Probe-LoRA) improves mean wind speed error by up to 28%. Conversely, for the ENSO (with Niño 3.4 index), a low-frequency, large-scale event, vanilla additive steering along the probed direction cleanly intensifies and reverses El Niño and La Niña phases on 100% of events. We release our framework in the open-source Mechanistic Interpretability and Steering Toolkit for Intelligent Climate (MISTIC).},
+  preview = {2026-bommer-mechanistic-interventions.png}
+}
+
+@inproceedings{elberkennou_every_2026,
+  title = {Every Fixed Metric Has a Blind Spot: A Learned Atmospheric Critic for Scoring Forecast Realism},
+  booktitle = {NeurIPS Workshop on Representation Learning for Earth Observation},
+  author = {Elberkennou, Younes and Demler, Dmitri and Meier, Thierry and Rispoli, Luca and Lehmann, Fanny and Oskarsson, Joel},
+  year = {2026},
+  month = sep,
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2609.18381},
+  url = {https://arxiv.org/abs/2609.18381},
+  abstract = {Despite their high accuracy on point-wise metrics, machine learning weather forecasting models can exhibit different failure modes such as blurring, periodic irregularities, and other unphysical spatial artifacts. This has motivated a variety of metrics to detect known failure cases. Existing metrics fix a representation or transformation in advance, and that choice limits the artifacts they can detect. We propose to train a discriminator for separating reference data from the model's output, and using its output logit to obtain a divergence-like realism score. The discriminator learns whatever separates the model's fields from real weather, adapting to whichever failure mode that model exhibits. We compare our learned atmospheric critic to existing metrics using various synthetic corruptions applied to ERA5 reanalysis data. Our method successfully identifies the corruptions and ranks their severity, while existing metrics fail on at least one corruption. Additionally, we evaluate forecasts from real weather models, and find that the realism score degrades with longer lead times and the metric generally assigns higher realism to numerical models than to machine learning models.},
+  preview = {https://arxiv.org/html/2609.18381v1/fig1_method_schematic_v6.png}
+}
+
+@misc{trentini_integrating_2026,
+  title = {Integrating GNSS-Derived Zenith Wet Delay into a Weather Foundation Model Improves Precipitation Forecasting},
+  author = {Trentini, Leonardo and Lehmann, Fanny and Crocetti, Laura and Soja, Benedikt},
+  year = {2026},
+  month = jul,
+  number = {arXiv:2607.05658},
+  eprint = {2607.05658},
+  archiveprefix = {arXiv},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2607.05658},
+  url = {https://arxiv.org/abs/2607.05658},
+  abstract = {Global Navigation Satellite Systems (GNSS), best known for positioning, also serve weather science, as atmospheric water vapour delays their signals. This delay, the Zenith Wet Delay (ZWD), is a direct, all-weather measure of column moisture. Although assimilated into numerical weather prediction for decades, ZWD is not yet used by leading machine learning weather models (MLWM), despite addressing a known deficiency: the underestimation of severe precipitation. Here we present the first integration of GNSS-derived ZWD into Aurora, a state-of-the-art weather foundation model. Our extended Aurora learns ZWD with skill comparable to its pretrained variables. More importantly, including ZWD systematically improves forecasts when fine-tuning for six-hour accumulated precipitation. Gains grow with severity, reaching an 8.8\% increase in Equitable Threat Score at the 99th percentile, while the precipitation power spectrum becomes more realistic at synoptic and planetary scales. Direct GNSS observations therefore encode information that MLWM can exploit for high-impact precipitation.},
+  preview = {https://arxiv.org/html/2607.05658v2/figures/model_diagrams/model_diagram_after_revision.png}
+}
+
 @inproceedings{lehmann_long_rollout_2026,
   title={Long-Rollout Stability in {AI} Weather Models: A Quantitative Benchmark and Analysis},
   author = {Lehmann, Fanny and Cheng, Yun and Ozdemir, Firat and Hoefler, Torsten and Schemm, Sebastian and Soja, Benedikt and Mishra, Siddhartha},

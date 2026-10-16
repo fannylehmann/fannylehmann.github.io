@@ -34,4 +34,4 @@ My research focuses on developing machine learning methods for physical systems,
 ### Join my group
 I am recruiting a PhD student through the [ELLIS PhD Program](https://ellis.eu/news/ellis-phd-program-call-for-applications-2026). The application deadline is 31 October 2026.
 
-If you want to do research in AI for Science and my research interests resonate with you, please [reach out to me](mailto:fanny.lehmann@ai.ethz.ch). I would be happy to hear about your background, research interests, and ideas. You can also apply directly through the [ELLIS application portal](https://apply.ellis.eu/) and you will find my name as a potential advisor.
+If you want to do research in AI for Science and my research interests resonate with you, please [reach out to me](mailto:prof.fanny.lehmann@gmail.com). I would be happy to hear about your background, research interests, and ideas. You can also apply directly through the [ELLIS application portal](https://apply.ellis.eu/) and you will find my name as a potential advisor.
